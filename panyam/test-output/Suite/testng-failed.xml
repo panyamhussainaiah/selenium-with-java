@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]">
+  <parameter name="browser" value="chrome"/>
+  <test parallel="none" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="Regression"/>
+        <exclude name="Sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="frameworks.maintestclass">
+        <methods>
+          <include name="closebrowser"/>
+          <include name="readdata"/>
+          <include name="AmazonSignIn"/>
+          <include name="driverSetup"/>
+        </methods>
+      </class> <!-- frameworks.maintestclass -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
