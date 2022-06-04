@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="2" passed="1" failed="1" skipped="0">
+<testng-results total="2" passed="1" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-02T18:21:20Z" name="Suite" finished-at="2022-06-02T18:21:26Z" duration-ms="6089">
+  <suite started-at="2022-06-04T11:00:12Z" name="Suite" finished-at="2022-06-04T11:00:25Z" duration-ms="13134">
     <groups>
       <group name="Regression">
-        <method signature="maintestclass.AmazonSignIn(java.lang.String, java.lang.String)[pri:0, instance:frameworks.maintestclass@606e4010]" name="AmazonSignIn" class="frameworks.maintestclass"/>
-        <method signature="maintestclass.demo()[pri:0, instance:frameworks.maintestclass@606e4010]" name="demo" class="frameworks.maintestclass"/>
+        <method signature="maintestclass.AmazonSignIn(java.lang.String, java.lang.String)[pri:0, instance:frameworks.maintestclass@5b247367]" name="AmazonSignIn" class="frameworks.maintestclass"/>
+        <method signature="maintestclass.demo()[pri:0, instance:frameworks.maintestclass@5b247367]" name="demo" class="frameworks.maintestclass"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2022-06-02T18:21:20Z" name="Test" finished-at="2022-06-02T18:21:26Z" duration-ms="6089">
+    <test started-at="2022-06-04T11:00:12Z" name="Test" finished-at="2022-06-04T11:00:25Z" duration-ms="13134">
       <class name="frameworks.maintestclass">
-        <test-method is-config="true" signature="readdata()[pri:0, instance:frameworks.maintestclass@606e4010]" started-at="2022-06-02T23:51:20Z" name="readdata" finished-at="2022-06-02T23:51:20Z" duration-ms="190" status="PASS">
+        <test-method is-config="true" signature="readdata()[pri:0, instance:frameworks.maintestclass@5b247367]" started-at="2022-06-04T16:30:12Z" name="readdata" finished-at="2022-06-04T16:30:12Z" duration-ms="177" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- readdata -->
-        <test-method signature="AmazonSignIn(java.lang.String, java.lang.String)[pri:0, instance:frameworks.maintestclass@606e4010]" started-at="2022-06-02T23:51:20Z" name="AmazonSignIn" data-provider="testdata2" finished-at="2022-06-02T23:51:20Z" duration-ms="0" status="FAIL">
+        <test-method signature="AmazonSignIn(java.lang.String, java.lang.String)[pri:0, instance:frameworks.maintestclass@5b247367]" started-at="2022-06-04T16:30:13Z" name="AmazonSignIn" data-provider="testdata2" finished-at="2022-06-04T16:30:13Z" duration-ms="0" status="SKIP">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFRow.getCell(int)" because the return value of "org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)" is null]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFRow.getCell(int)" because the return value of "org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)" is null
-	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:143)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:426)
-	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
-	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:162)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
@@ -48,8 +48,8 @@ Caused by: java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.us
 	at utilities.baseclass.getdata(baseclass.java:72)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:117)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:136)
 	... 20 more
 ]]>
             </full-stacktrace>
@@ -57,7 +57,7 @@ Caused by: java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.us
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AmazonSignIn -->
-        <test-method is-config="true" signature="driverSetup(java.lang.String)[pri:0, instance:frameworks.maintestclass@606e4010]" started-at="2022-06-02T23:51:20Z" name="driverSetup" finished-at="2022-06-02T23:51:26Z" duration-ms="5449" status="PASS">
+        <test-method is-config="true" signature="driverSetup(java.lang.String)[pri:0, instance:frameworks.maintestclass@5b247367]" started-at="2022-06-04T16:30:13Z" name="driverSetup" finished-at="2022-06-04T16:30:25Z" duration-ms="12533" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -68,15 +68,15 @@ Caused by: java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.us
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverSetup -->
-        <test-method signature="demo()[pri:0, instance:frameworks.maintestclass@606e4010]" started-at="2022-06-02T23:51:26Z" name="demo" finished-at="2022-06-02T23:51:26Z" duration-ms="1" status="PASS">
+        <test-method signature="demo()[pri:0, instance:frameworks.maintestclass@5b247367]" started-at="2022-06-04T16:30:25Z" name="demo" finished-at="2022-06-04T16:30:25Z" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- demo -->
-        <test-method is-config="true" signature="closebrowser(org.testng.ITestResult)[pri:0, instance:frameworks.maintestclass@606e4010]" started-at="2022-06-02T23:51:26Z" name="closebrowser" finished-at="2022-06-02T23:51:26Z" duration-ms="0" status="FAIL">
+        <test-method is-config="true" signature="closebrowser(org.testng.ITestResult)[pri:0, instance:frameworks.maintestclass@5b247367]" started-at="2022-06-04T16:30:25Z" name="closebrowser" finished-at="2022-06-04T16:30:25Z" duration-ms="0" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=demo status=SUCCESS method=maintestclass.demo()[pri:0, instance:frameworks.maintestclass@606e4010] output={null}]]]>
+                <![CDATA[[TestResult name=demo status=SUCCESS method=maintestclass.demo()[pri:0, instance:frameworks.maintestclass@5b247367] output={null}]]]>
               </value>
             </param>
           </params>
@@ -89,25 +89,25 @@ Caused by: java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.us
 	at utilities.baseclass.closebrowser(baseclass.java:52)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:703)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
