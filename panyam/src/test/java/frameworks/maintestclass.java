@@ -1,6 +1,7 @@
 package frameworks;
 
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -20,7 +21,7 @@ public class maintestclass extends baseclass{
 	    SoftAssert sa=new SoftAssert();
 	    System.out.println("1");
 	    log.info("before Assertion");
-	   // Assert.assertEquals(driver.getTitle(),"Amazon.com. Spend less. Smile more.");
+	    Assert.assertEquals(driver.getTitle(),"Amazon.com. Spend less. Smile more.");
 	    //sa.assertTrue(driver.findElement(By.xpath("//span[@id='nav-link-accountList-nav-line-1' and contains(text(),'Hello,')]")).isDisplayed());
 		System.out.println("after assertion");
 		//sa.assertAll();

@@ -5,5 +5,6 @@ pagerepository\amazonhomepage.class
 utilities\loadconfigure.class
 utilities\screenshotcapture.class
 frameworks\maintestclass.class
+selenium\circledemo.class
 utilities\baseclass.class
 pagerepository\searchpage.class
